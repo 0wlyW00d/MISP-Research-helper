@@ -1,244 +1,316 @@
 {
-    "attributes": {
-      "address": {
-        "description": "Postal address of the person.",
-        "misp-attribute": "text",
-        "multiple": true,
-        "ui-priority": 10
-      },
-      "alias": {
-        "description": "Alias name or known as.",
-        "misp-attribute": "text",
-        "multiple": true,
-        "ui-priority": 97
-      },
-      "birth-certificate-number": {
-        "description": "Birth Certificate Number",
-        "misp-attribute": "text",
-        "ui-priority": 0
-      },
-      "date-of-birth": {
-        "description": "Date of birth of a natural person (in YYYY-MM-DD format).",
-        "misp-attribute": "date-of-birth",
-        "ui-priority": 0
-      },
-      "dni": {
-        "description": "Spanish National ID",
-        "misp-attribute": "text",
-        "multiple": true,
-        "ui-priority": 10
-      },
-      "e-mail": {
-        "description": "Email address of the person.",
-        "misp-attribute": "email-src",
-        "multiple": true,
-        "ui-priority": 10
-      },
-      "fax-number": {
-        "description": "Fax number of the person.",
-        "misp-attribute": "phone-number",
-        "multiple": true,
-        "ui-priority": 10
-      },
-      "first-name": {
-        "description": "First name of a natural person.",
-        "disable_correlation": true,
-        "misp-attribute": "first-name",
-        "ui-priority": 98
-      },
-      "full-name": {
-        "description": "Full name of a natural person usually composed of first-name, middle-name and last-name.",
-        "misp-attribute": "full-name",
-        "ui-priority": 100
-      },
-      "function": {
-        "description": "Function of the natural person such as analyst, cyber operator, lawyer.",
-        "disable_correlation": true,
-        "misp-attribute": "text",
-        "ui-priority": 101
-      },
-      "gender": {
-        "description": "The gender of a natural person.",
-        "disable_correlation": true,
-        "misp-attribute": "gender",
-        "ui-priority": 0,
-        "values_list": [
-          "Male",
-          "Female",
-          "Other",
-          "Prefer not to say",
-          "Unknown"
-        ]
-      },
-      "identity-card-number": {
-        "description": "The identity card number of a natural person.",
-        "misp-attribute": "identity-card-number",
-        "ui-priority": 0
-      },
-      "instant-messaging-used": {
-        "description": "The IM application used by this person.",
-        "disable_correlation": true,
-        "misp-attribute": "text",
-        "multiple": true,
-        "sane_default": [
-          "WhatsApp",
-          "Google Hangouts",
-          "Facebook Messenger",
-          "Telegram",
-          "Signal",
-          "WeChat",
-          "BlackBerry Messenger",
-          "TeamSpeak",
-          "TorChat",
-          "Tox",
-          "RetroShare",
-          "Slack",
-          "Wire",
-          "Threema",
-          "Discord",
-          "Mumble"
-        ],
-        "ui-priority": 10
-      },
-      "last-name": {
-        "description": "Last name of a natural person.",
-        "misp-attribute": "last-name",
-        "ui-priority": 100
-      },
-      "middle-name": {
-        "description": "Middle name of a natural person.",
-        "misp-attribute": "middle-name",
-        "ui-priority": 99
-      },
-      "mothers-name": {
-        "description": "Mother name, father, second name or other names following country's regulation.",
-        "misp-attribute": "text",
-        "ui-priority": 1
-      },
-      "nationality": {
-        "description": "The nationality of a natural person.",
-        "disable_correlation": true,
-        "misp-attribute": "nationality",
-        "multiple": true,
-        "ui-priority": 0
-      },
-      "nic-hdl": {
-        "description": "NIC Handle (Network Information Centre handle) of the person.",
-        "misp-attribute": "text",
-        "multiple": true,
-        "ui-priority": 10
-      },
-      "nie": {
-        "description": "Foreign National ID (Spain)",
-        "misp-attribute": "text",
-        "multiple": true,
-        "ui-priority": 10
-      },
-      "nif": {
-        "description": "Tax ID Number (Spain)",
-        "misp-attribute": "text",
-        "multiple": true,
-        "ui-priority": 10
-      },
-      "occupation": {
-        "description": "Work or occupation of the person or identity.",
-        "disable_correlation": true,
-        "misp-attribute": "text",
-        "ui-priority": 10
-      },
-      "ofac-identification-number": {
-        "description": "ofac-identification Number",
-        "misp-attribute": "text",
-        "ui-priority": 0
-      },
-      "passport-country": {
-        "description": "The country in which the passport was issued.",
-        "disable_correlation": true,
-        "misp-attribute": "passport-country",
-        "ui-priority": 0
-      },
-      "passport-expiration": {
-        "description": "The expiration date of a passport.",
-        "disable_correlation": true,
-        "misp-attribute": "passport-expiration",
-        "ui-priority": 0
-      },
-      "passport-number": {
-        "description": "The passport number of a natural person.",
-        "misp-attribute": "passport-number",
-        "ui-priority": 0
-      },
-      "phone-number": {
-        "description": "Phone number of the person.",
-        "misp-attribute": "phone-number",
-        "multiple": true,
-        "ui-priority": 10
-      },
-      "place-of-birth": {
-        "description": "Place of birth of a natural person.",
-        "disable_correlation": true,
-        "misp-attribute": "place-of-birth",
-        "ui-priority": 0
-      },
-      "portrait": {
-        "description": "Portrait of the person.",
-        "misp-attribute": "attachment",
-        "multiple": true,
-        "ui-priority": 10
-      },
-      "redress-number": {
-        "description": "The Redress Control Number is the record identifier for people who apply for redress through the DHS Travel Redress Inquiry Program (DHS TRIP). DHS TRIP is for travelers who have been repeatedly identified for additional screening and who want to file an inquiry to have erroneous information corrected in DHS systems.",
-        "misp-attribute": "redress-number",
-        "ui-priority": 0
-      },
-      "role": {
-        "description": "The role of a person.",
-        "disable_correlation": true,
-        "misp-attribute": "text",
-        "multiple": true,
-        "ui-priority": 0,
-        "values_list": [
-          "Suspect",
-          "Victim",
-          "Defendent",
-          "Accused",
-          "Culprit",
-          "Accomplice",
-          "Witness",
-          "Target",
-          "Source",
-          "Originator",
-          "Informant",
-          "Emitter"
-        ]
-      },
-      "social-security-number": {
-        "description": "Social security number.",
-        "misp-attribute": "text",
-        "ui-priority": 0
-      },
-      "text": {
-        "description": "A description of the person or identity.",
-        "disable_correlation": true,
-        "misp-attribute": "text",
-        "ui-priority": 1
-      },
-      "title": {
-        "description": "Title of the natural person such as Dr. or equivalent.",
-        "disable_correlation": true,
-        "misp-attribute": "text",
-        "ui-priority": 101
-      }
-    },
-    "description": "An object which describes a person or an identity.",
-    "meta-category": "misc",
-    "name": "person",
-    "requiredOneOf": [
-      "first-name",
-      "last-name",
-      "full-name",
-      "alias"
+    "namespace": "Personification",
+    "description": "Object on the description of cloth and bodies of a natural person",
+    "version": 1,
+    "predicates": [
+        {
+            "value": "Cloth description"
+        },
+        {
+            "value": "Tattoos"
+        }
     ],
-    "uuid": "a15b0477-e9d1-4b9c-9546-abe78a4f4248",
-    "version": 16
-  }
+    "values": [
+        {
+            "predicate": "Cloth description",
+            "entry": [
+                {
+                    "head-accessories": {
+                        "description": "Cloth and accessories on the head",
+                        "misp-attribute": "text",
+                        "multiple": true,
+                        "ui-priority": 10,
+                        "values_list": [
+                            "hat",
+                            "cap",
+                            "bonnet",
+                            "glasses",
+                            "bandeau"
+                          ]
+                    },
+                    "top-accessories": {
+                        "description": "Cloth and accessories on the top part of the body",
+                        "misp-attribute": "text",
+                        "multiple": true,
+                        "ui-priority": 10,
+                        "values_list": [
+                            "jacket",
+                            "coat",
+                            "dress",
+                            "shirt",
+                            "top",
+                            "pullover",
+                            "sweatshirt",
+                            "suit",
+                            "tie",
+                            "bow tie",
+                            "lady's suit",
+                            "waistcoat",
+                            "cardigan",
+                            "undershirt",
+                            "t-shirt",
+                            "bra",
+                            "scarf",
+                            "glove"
+                          ]
+                    },
+                    "bottom-accessories": {
+                        "description": "Cloth and accessories on the bottom part of the body",
+                        "misp-attribute": "text",
+                        "multiple": true,
+                        "ui-priority": 10,
+                        "values_list": [
+                            "trousers",
+                            "skirt",
+                            "underpants / panties",
+                            "shorts",
+                            "boxer shorts",
+                            "body stocking",
+                            "sock",
+                            "shoe",
+                            "boot",
+                            "sandal",
+                            "slipper",
+                            "sneaker",
+                            "hiking boot",
+                            "high tops"
+                          ]
+                    }
+                          
+                }
+            ],
+
+        
+            "predicate": "Tattoos",
+            "entry": [
+                {
+                    "body-part": {
+                        "description": "Part of the body where are situated tattoos",
+                        "misp-attribute": "text",
+                        "multiple": true,
+                        "ui-priority": 10,
+                        "values_list": [
+                            "head",
+                            "forehead",
+                            "face",
+                            "ear",
+                            "eye",
+                            "mouth/lips",
+                            "neck",
+                            "shoulder",
+                            "chest",
+                            "elbow",
+                            "arm",
+                            "forearm",
+                            "hand",
+                            "finger",
+                            "thigh",
+                            "knee",
+                            "calf",
+                            "heel",
+                            "foot",
+                            "toe"
+                          ]
+                    }
+                }
+            ]
+        }
+    ],
+    
+    "physical-description": {
+        "portrait": {
+            "description": "Portrait of the person.",
+            "misp-attribute": "attachment",
+            "multiple": true,
+            "ui-priority": 10
+          },
+          "age-range": {
+            "description": "Age range that the person appears to be",
+            "misp-attribute": "int",
+            "ui-priority": 0
+          },
+          "weight": {
+            "description": "Weight of a person in Kg.",
+            "misp-attribute": "float",
+            "multiple": true,
+            "ui-priority": 10
+          },
+          "height": {
+            "description": "Height of a person in cm.",
+            "misp-attribute": "float",
+            "multiple": true,
+            "ui-priority": 10
+          },
+          "body-type": {
+            "description": "Body type of a person.",
+            "disable_correlation": true,
+            "misp-attribute": "body-type",
+            "ui-priority": 0,
+            "values_list": [
+              "Slim",
+              "Tone",
+              "Muscular",
+              "Stocky",
+              "Large",
+              "Unknown"
+            ]
+          },
+          "shoe-size": {
+            "description": "Shoe size of a person.",
+            "misp-attribute": "float",
+            "multiple": true,
+            "ui-priority": 10,
+            "values_list": [
+                "US",
+                "UK",
+                "EU",
+                "Asia",
+                "CM",
+                "Inches"
+              ]
+          },
+          "color-of-eyes": {
+            "description": "Description of a person’s colour of eyes.",
+            "misp-attribute": "color",
+            "multiple": true,
+            "ui-priority": 10,
+            "values_list": [
+                "Amber",
+                "Blue",
+                "Brown",
+                "Gray",
+                "Green",
+                "Hazel",
+                "Red",
+                "Unknown"
+              ]
+          },
+          "shape-of-eyes": {
+            "description": "Description of a person’s eye shape.",
+            "misp-attribute": "text",
+            "multiple": true,
+            "ui-priority": 10,
+            "values_list": [
+                "Monolids",
+                "Hooded",
+                "Upturned",
+                "Downturned",
+                "Round",
+                "Almond",
+                "Unknown"
+              ]
+          },  
+          "skin-complexion": {
+            "description": "Skin tone and complexion of a person. Type I: Extremely fair skin, always burns, never tans. Type II: Fair skin, always burns, sometimes tans.Dry: Medium skin, sometimes burns, always tans.Type IV: Olive skin, rarely burns, always tans. Type V: Moderately pigmented brown skin, never burns, always tans. Type VI: Markedly pigmented black skin, never burns, always tans. ",
+            "misp-attribute": "text",
+            "multiple": true,
+            "ui-priority": 10,
+            "values_list": [
+                "Type I",
+                "Type II",
+                "Type III",
+                "Type IV",
+                "Type V",
+                "Type VI",
+                "Unknown"
+              ]
+          },
+          "skin-charateristics": {
+            "description": "Traits or features of a person's skin",
+            "misp-attribute": "text",
+            "multiple": true,
+            "ui-priority": 10,
+            "values_list": [
+                "Normal",
+                "Irritated",
+                "Dry",
+                "Oily",
+                "Scaly",
+                "Red spots",
+                "Skin moles"
+              ]
+          },
+          "other-facial-features": {
+            "description": "Description of other facial features such as nose, cheeks, lips etc...",
+            "misp-attribute": "text",
+            "multiple": true,
+            "ui-priority": 10
+          },
+          "hair-color": {
+            "description": "Description of a person’s colour of hair.",
+            "misp-attribute": "text",
+            "multiple": true,
+            "ui-priority": 10,
+            "values_list": [
+                "Black",
+                "Brown",
+                "Auburn",
+                "Red",
+                "Blond",
+                "Gray",
+                "White",
+                "Blue",
+                "Pink",
+                "Green",
+                "Violet",
+                "Unknown"
+              ]
+          },
+          "hair-characteristics": {
+            "description": "Description of the characteristics of someones hairs.",
+            "misp-attribute": "text",
+            "multiple": true,
+            "ui-priority": 10,
+            "values_list": [
+                "Straight",
+                "Wavy",
+                "Curly",
+                "Coily",
+                "Unknown"
+              ]
+          },
+          "haircut": {
+            "description": "Description of the characteristics of someones hairs.",
+            "misp-attribute": "text",
+            "multiple": true,
+            "ui-priority": 10,
+            "values_list": [
+                "Crew Cut",
+                "Shaved",
+                "Bald",
+                "Long",
+                "Spiky",
+                "Dreadlocks",
+                "Cornrow",
+                "Bob",
+                "Layered",
+                "Flat-top",
+                "Chignon",
+                "Bun",
+                "French Twist",
+                "Medium",
+                "Braid",
+                "Pigtails",
+                "Ponytail",
+                "Unknown"
+              ]
+          },
+          "haircut": {
+            "description": "Position of a birthmark.",
+            "misp-attribute": "text",
+            "multiple": true,
+            "ui-priority": 10,
+            "values_list": [
+                "Head",
+                "Arms",
+                "Back",
+                "Torso",
+                "Legs",
+                "Foot",
+                "Backside",
+                "Unknown"
+              ]
+          }    
+              
+    }
+}
