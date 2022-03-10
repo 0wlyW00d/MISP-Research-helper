@@ -103,7 +103,7 @@ For more information checkout official [MISP Github Repository](https://www.misp
 
 
 
-<!-- GETTING STARTED 
+<!-- GETTING STARTED
 ## Getting Started
 
 This is an example of how you may give instructions on setting up your project locally.
@@ -155,7 +155,7 @@ Distributed under the GPL-3.0. See `LICENSE.txt` for more information.
 ## Contact
 
 * Guillaume - [@Github](https://github.com/0wlyW00d)
-* Quentin - [@Github](https://github.com/QuentinDuflot) 
+* Quentin - [@Github](https://github.com/QuentinDuflot)
 
 Project Link: [https://github.com/0wlyW00d/MISP-Research-helper](https://github.com/0wlyW00d/MISP-Research-helper)
 
