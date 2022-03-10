@@ -113,8 +113,11 @@ To get a local copy up and running follow these simple example steps.
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Research in the different MISP objects
-- [ ] Merge of similar object
+- [x] Research in the different MISP objects
+- Object "person" already exists (But missing fields)
+- [x] Merge of similar object
+- "interpol-notice" and "person" objects have similarities
+- [x] Adding Tattoo object
 - [ ] Extending Person object
 - [ ] Adding Cloth object
 
