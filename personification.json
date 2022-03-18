@@ -1,5 +1,5 @@
 {
-  "physical-description": {
+  "attributes": {
     "portrait": {
       "description": "Portrait of the person.",
       "misp-attribute": "attachment",
@@ -177,8 +177,8 @@
         "Unknown"
       ]
     },
-    "haircut": {
-      "description": "Position of a birthmark.",
+    "birthmark": {
+      "description": "Position(s) of birthmarks.",
       "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 10,
@@ -192,7 +192,17 @@
         "Backside",
         "Unknown"
       ]
-    }    
-    
-  }
+    }   
+  },
+  "description": "An object which describes a person or an identity",
+  "meta-category": "misc",
+  "name": "personification",
+  "requiredOneOf": [
+    "first-name",
+    "last-name",
+    "full-name",
+    "alias"
+  ],
+  "uuid": "4a2bdac3-e7bb-4a47-ba5f-35df63216885",
+  "version": 2
 }
