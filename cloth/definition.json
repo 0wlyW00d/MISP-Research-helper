@@ -1,7 +1,7 @@
 {
   "attributes": {
     "description": {
-      "description": "Description of the cloth, or the apparence of the natural person",
+      "description": "Cloth's Description of a natural person",
       "misp-attribute": "text",
       "ui-priority": 50
     },
@@ -67,7 +67,7 @@
       ]
     },
     "cloth-color": {
-      "description": "Select the colors of the tattoo",
+      "description": "Cloth's colors",
       "multiple": true,
       "misp-attribute": "text",
       "ui-priority": 1,
@@ -87,13 +87,13 @@
       ]
     },
     "cloth-picture": {
-      "description": "Picture of the cloth",
+      "description": "Cloth's pictures",
       "misp-attribute": "attachment",
       "multiple": true,
       "ui-priority": 0
     }
   },
-  "description": "Describes clothes a natural person is wearing",
+  "description": "Describes clothes a natural person wears",
   "meta-category": "misc",
   "name": "cloth",
   "required": [
