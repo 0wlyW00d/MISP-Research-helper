@@ -177,6 +177,33 @@
         "Unknown"
       ]
     },
+    "beard": {
+      "description": "Description of the characteristics of someones beard.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 10,
+      "values_list": [
+        "Beardless",
+        "Stubble Short",
+        "Stuble Medium",
+        "Stuble Long",
+        "Full Beard",
+        "French Fork",
+        "Ducktail",
+        "Goatee",
+        "Imperial",
+        "Van Dyke",
+        "Anchor",
+        "Balbo",
+        "Mutton Chops",
+        "Verdi",
+        "Garibaldi",
+        "Dutch",
+        "Winter Beard",
+        "Mustache",
+        "Unknown"
+      ]
+    },
     "birthmark": {
       "description": "Position(s) of birthmarks.",
       "misp-attribute": "text",
